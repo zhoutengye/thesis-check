@@ -1,0 +1,47 @@
+{
+    "dir": {
+        "path": "./example/",
+        "report": "./example/example_report.md",
+        "ignore": [
+            ".aux"
+        ]
+    },
+    "options": {
+        "oral_detect": true,
+        "level": 1,
+        "duplicate_detect": true,
+        "AIcorrect": true,
+        "corrector_engine": "macbert"
+    },
+    "oral": {
+        "customize": [],
+        "level1": [
+            "比如",
+            "比方",
+            "然后",
+            "接下来",
+            "而且",
+            "因为",
+            "所以",
+            "意味着",
+            "而言",
+            "越来越",
+            "来说",
+            "但是",
+            "另外",
+            "还有",
+            "这个"
+        ],
+        "level2": [
+            "也",
+            "很",
+            "非常",
+            "十分",
+            "往往",
+            "不"
+        ],
+        "level3": [
+            "了"
+        ]
+    }
+}
