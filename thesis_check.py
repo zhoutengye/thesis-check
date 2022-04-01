@@ -58,6 +58,8 @@ def find_duplicate(texfile):
     for line in texfile:
         n+=1
         ind = 0
+        if line[0]!='%':
+            continue
         for i in range(len(line)-1):
             ind+=1
             for j in range(4):
@@ -76,8 +78,10 @@ def find_oral_words(texfile,oral_check):
     n = 0
     level = oral_check['level']
     for line in texfile:
+        n+=1
+        if line[0]!='%':
+            continue
         for word in oral_check['default']:
-            n+=1
             ind = line.find(word)
             if ind != -1:
                 orals.append([word,n,ind,line])
