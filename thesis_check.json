@@ -1,7 +1,7 @@
 {
     "dir": {
-        "path": "./example/",
-        "report": "./example/example_report.md",
+        "path": "/home/yeldon/Dropbox (Maestral)/Apps/Overleaf/Thesis/chapters/",
+        "report": "/home/yeldon/Dropbox (Maestral)/Apps/Overleaf/Thesis/check_report.md",
         "ignore": [
             ".aux"
         ]
@@ -11,7 +11,7 @@
         "level": 1,
         "duplicate_detect": true,
         "AIcorrect": true,
-        "corrector_engine": "macbert"
+        "corrector_engine": "kelnm"
     },
     "oral": {
         "customize": [],

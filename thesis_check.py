@@ -30,7 +30,7 @@ def get_path(js):
         file_dir = dir_files[0]
         files = dir_files[2]
         for file in files:
-            if ".tex" in file:
+            if file[-4:] == ".tex":
                 tex_files.append([file_dir,file])
     return tex_files
 
@@ -58,7 +58,7 @@ def find_duplicate(texfile):
     for line in texfile:
         n+=1
         ind = 0
-        if line[0]!='%':
+        if line[0]=='%':
             continue
         for i in range(len(line)-1):
             ind+=1
@@ -79,7 +79,7 @@ def find_oral_words(texfile,oral_check):
     level = oral_check['level']
     for line in texfile:
         n+=1
-        if line[0]!='%':
+        if line[0]=='%':
             continue
         for word in oral_check['default']:
             ind = line.find(word)
