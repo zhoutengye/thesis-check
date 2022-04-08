@@ -1,16 +1,16 @@
 {
     "dir": {
-        "path": "/home/yeldon/Dropbox (Maestral)/Apps/Overleaf/Thesis/chapters/",
-        "report": "/home/yeldon/Dropbox (Maestral)/Apps/Overleaf/Thesis/check_report.md",
+        "path": "./example/",
+        "report": "./example/example_report.md",
         "ignore": [
             ".aux"
         ]
     },
     "options": {
         "oral_detect": true,
-        "level": 1,
+        "level": 2,
         "duplicate_detect": true,
-        "AIcorrect": true,
+        "AIcorrect": false,
         "corrector_engine": "kelnm"
     },
     "oral": {
@@ -30,18 +30,27 @@
             "但是",
             "另外",
             "还有",
-            "这个"
+            "这个",
+            "有的"
         ],
         "level2": [
-            "也",
             "很",
+            "也",
             "非常",
             "十分",
             "往往",
-            "不"
+            "问题",
+            "困难",
+            "一样",
+            "好像"
         ],
         "level3": [
-            "了"
+            "能",
+            "在",
+            "的",
+            "不",
+            "了",
+            "着"
         ]
     }
 }
